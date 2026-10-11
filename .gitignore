@@ -1,0 +1,26 @@
+# Entorno virtual y caché de Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+instance/
+
+# Secretos: NUNCA subas el .env (solo .env.example)
+.env
+.env.*
+!.env.example
+
+# Archivos subidos por usuarios (se conserva solo el .gitkeep de cada carpeta)
+app/static/uploads/productos/*
+app/static/uploads/comprobantes/*
+app/static/uploads/pagos/*
+!app/static/uploads/*/.gitkeep
+
+# Editor / sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Vercel
+.vercel/
